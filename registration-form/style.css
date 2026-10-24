@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #DCE6EB;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.container{
+    background-color: rgb(244, 244, 245);
+    padding: 40px;
+    border-radius: 9px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(70,90,100,0.18);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+   
+   
+}
+input{
+    padding: 10px;
+    border-color:white ;
+    margin-top: 6px;
+    transition: all 0.2s;
+}
+input:focus{
+    outline: none;
+    border: none;
+    border: 2px solid rgb(189, 224, 255);
+}
+
+small{
+    visibility: hidden;
+    position: absolute;
+   
+    
+    top: 100%;
+}
+
+
+.form-group.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form-group.error input{
+    outline: none;
+    border: 2px solid;
+    border-color: rgb(234, 67, 67);
+}
+
+
+
+.form-group.success input{
+     outline: none;
+    border: 2px solid;
+    border-color:rgb(81, 254, 81);
+}
+
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    background-color: #1ca5e9;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-2px);
+     background-color: #00aaff;
+}
+
+
+button:active{
+    transform: translateY(0px);
+}
+
